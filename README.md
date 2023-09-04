@@ -71,7 +71,7 @@ Yue Zhang - yuez11;
 The results of the 10 test/train split results are the following:
 
 | ElasticNet Error | XGBoost Error | ElasticNet Time | XGBoost Time |
-| ---------------- | ------------- | --------------- | ------------ |
+| ---------- | ------ | --------- | ------ |
 |      0.1193      |     0.1129    |    6.916 sec    |   41.185 sec |
 |      0.1214      |     0.1178    |    6.630 sec    |   40.098 sec |
 |      0.1134      |     0.1117    |    7.152 sec    |   40.904 sec |
