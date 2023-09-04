@@ -2,9 +2,9 @@
 # STAT 542 Statistical Learning - Fall 2022
 
 Team:
-Paolo Ferrari - paolof2 
-Shitao Liu - sl53 
-Yue Zhang - yuez11 
+Paolo Ferrari - paolof2; 
+Shitao Liu - sl53; 
+Yue Zhang - yuez11;
 
 # I. Introduction
 
