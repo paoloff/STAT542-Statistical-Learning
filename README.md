@@ -50,7 +50,7 @@ Yue Zhang - yuez11;
 
 3. Performance and Running Time
 
-    - Using ElasticNet with lambda range np.exp(np.linspace(-1, -21, num=200)) and alpha=0.2, we recorded error below benchmark for every train-test split.\
+    - Using ElasticNet with $\lambda$-range of np.exp(np.linspace(-1, -21, num=200)) and $\alpha=0.2$, we recorded error below benchmark for every train-test split.
 
 
 # III. Regression Tree Model
