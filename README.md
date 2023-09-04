@@ -8,7 +8,7 @@ Yue Zhang - yuez11;
 
 # I. Introduction
 
-In this project, we predicted the price of houses in Ames from a large dataset categorized by location, size, year built, etc.
+In this project, we predicted the $\alpha$ price of houses in Ames from a large dataset categorized by location, size, year built, etc.
 
     - We utilized Linear Regression (LR) and Regression Tree (RT) models for prediction and refined each model with different regularization and feature engineering steps.
 
