@@ -1,5 +1,3 @@
-# Welcome to GitHub Desktop!
-
 Project 1: Predicting the Housing Prices in Ames
 STAT 542 - Fall 2022
 
