@@ -8,7 +8,7 @@ Paolo Ferrari - paolof2
 Shitao Liu - sl53 
 Yue Zhang - yuez11 
 
-I. Introduction
+# I. Introduction
 
 In this project, we predicted the price of houses in Ames from a large dataset categorized by location, size, year built, etc.
 
@@ -18,7 +18,7 @@ In this project, we predicted the price of houses in Ames from a large dataset c
 
     - In the final 10x validation test, the root of mean squared error was 12.1 % for LR and 12.0 % for RT.
 
-II. Linear Regression Model
+# II. Linear Regression Model
 
 For the regression model, we did several pre-processing steps to boost the performance.
 
