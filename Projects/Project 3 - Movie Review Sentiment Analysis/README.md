@@ -41,9 +41,8 @@ The data processing consists of 2 main steps: (1) removing irrelevant symbols an
     - The steps to obtain the vocabulary are:
         - Construct a vectorized representation of all texts with sequence of words up to 4. Each term (sequence of 1 to 4 words) is a column in this representation, and each row is a review.
         - Make a Logistic Regression with Lasso with this data.
-        - Select the model with largest degree of freedom less than 2000.
-        - Make another Logistic Regression with Lasso with a restricted vocabulary obtained from the previous step.
-        - Select the model with the degree of freedom closest to 1000.
+        - Select the model with largest number of predictor variables found by Lasso (maximum of 2000).
+        - Make another set of Logistic Regressions with Lasso with the restricted vocabulary obtained from the previous step. Select the model with the degree of freedom closest to 1000.
     - In this way, we obtain a vocabulary with 1005 terms in R.
     - Later, in Python, we reduce this to 980 terms by equating different words with the same letters (e.g. “its” and “it’s”). The 980 terms are submitted in a separate text file.
       
