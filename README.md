@@ -57,11 +57,11 @@ Yue Zhang - yuez11;
 
 - For the Regression Tree Model, we used the XG Boost algorithm. Compared to the Linear Regression, this model required less pre-processing steps and gave very similar error rates.
 
-    - 1. Data Pre-processing
-        - We utilized dummy coding and kept all features from train dataset. Keep all levels even if binary, and throw away all unseen features in the test dataset.
+1. Data Pre-processing
+    - We utilized dummy coding and kept all features from train dataset. Keep all levels even if binary, and throw away all unseen features in the test dataset.
 
-    - 2. Model Selection
-        - We utilized XGBoost with 1000 trees, 0.05 learning rate, each round use 50% randomly picked data to train the new tree. We used 100% of features when training a new tree.
+2. Model Selection
+   - We utilized XGBoost with 1000 trees, 0.05 learning rate, each round use 50% randomly picked data to train the new tree. We used 100% of features when training a new tree.
 
 
 # IV. Results
@@ -86,4 +86,5 @@ The results of the 10 test/train split results are the following:
 The mean errors and execution times are shown below.
 
 | Mean ElasticNet Error | Mean XGBoost Error | Mean ElasticNet Time | Mean XGBoost Time |
+| --------------------- | ------------------ | -------------------- | ----------------- |
 |          0.1215       |        0.1197      |       7.38 sec       |     40.33 sec     |
