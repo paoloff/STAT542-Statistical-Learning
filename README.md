@@ -8,13 +8,16 @@ Yue Zhang - yuez11;
 
 # I. Introduction
 
-In this project, we predicted the $\alpha$ price of houses in Ames from a large dataset categorized by location, size, year built, etc.
+In this project, we predicted the price of houses in Ames from a large dataset categorized by location, size, year built, etc.
 
-    - We utilized Linear Regression (LR) and Regression Tree (RT) models for prediction and refined each model with different regularization and feature engineering steps.
+\begin{itemize}
+
+    \item We utilized Linear Regression (LR) and Regression Tree (RT) models for prediction and refined each model with different regularization and feature engineering steps.
 
     - Our final models were LR with elastic net regularization and RT using XG Boost.
 
     - In the final 10x validation test, the root of mean squared error was 12.1 % for LR and 12.0 % for RT.
+\end{itemize}
 
 # II. Linear Regression Model
 
