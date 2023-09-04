@@ -1,8 +1,11 @@
-# STAT 542 – Project 3: Movie Review Sentiment Analysis
-Fall 2022
-Paolo Ferrari– paolof2
-Shitao Liu – sl53
-Yue Zhang – yuez11
+# Project 3 - Movie Review Sentiment Analysis
+# STAT 542 Statistical Learning - Fall 2022
+
+Team:
+Paolo Ferrari - paolof2; 
+Shitao Liu - sl53; 
+Yue Zhang - yuez11;
+
 
 1. Overview of the project
 Sentiment analysis is a tool for classifying the subjective impression that someone has of a given product or topic. The basic goal is to read a text written in natural language and map it to a scale ranging from positive to negative feelings. Because it is able to interpret human language, sentiment analysis is widely used in many online platforms. For instance, companies use sentiment analysis to gain direct feedback of customers of a product.
