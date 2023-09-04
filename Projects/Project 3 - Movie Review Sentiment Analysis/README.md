@@ -29,12 +29,12 @@ The data set is a table with 50000 rows and 4 columns consisting of
     iv. Review, the actual text written by the reviewer.
 The data processing consists of 2 main steps: (1) removing irrelevant symbols and (2) filtering the text using a vocabulary.
 
-- 3.1. Bag-of-words encoding
+- Bag-of-words modeling
 
   - A common class of models for sentiment analysis are the so-called bag-of-words models. In this type of model, the only elements that matter in a body of text are the words themselves, excluding punctuation and the order in which words apper. Therefore, the first thing we do in processing the data is to remove all punctuations marks and make all letters in miniscule form.
   - Besides making the data easier to process in subsequent steps, removing punctuation also removes any HTML tags attached to the text which could cause problems later on.
 
-- 3.2. Filtering the text using a vocabulary
+- Filtering the text using a vocabulary
   
     - The second main step in processing the review texts is to remove most words and only use a small subset of them. The reason for this is that usually by only knowing a small subset of words in a review is enough to guess the impression of the reviewer, such as “best” and “great” for positive reviews and “worst” or “waste” for negative ones. By removing the unnecessary or less meaningful words, we can simplify the complexity of the problem and prevent overfitting of the model.
     - The vocabulary is found in R. It is worth mentioning here that we utilized the data from all reviews to obtain the vocabulary, not only the train data of a given split. Technically this would be a little of a cheat, but it was allowed by Prof. Liang since we have access to all data anyway.
