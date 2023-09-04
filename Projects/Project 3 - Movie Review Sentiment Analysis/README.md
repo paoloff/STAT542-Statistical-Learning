@@ -30,7 +30,7 @@ The data set is a table with 50000 rows and 4 columns consisting of
 The data processing consists of 2 main steps: (1) removing irrelevant symbols and (2) filtering the text using a vocabulary.
 
 - 2.1. Removing irrelevant symbols
-        - A common class of models for sentiment analysis are the so-called bag-of-words models. In this type of model, the only elements that matter in a body of text are the words themselves, excluding any punctuation. Therefore, the first thing we do in processing the data is to remove all punctuations marks and make all letters in miniscule form.
+        - A common class of models for sentiment analysis are the so-called bag-of-words models. In this type of model, the only elements that matter in a body of text are the words themselves, excluding punctuation and the order in which words apper. Therefore, the first thing we do in processing the data is to remove all punctuations marks and make all letters in miniscule form.
         - To simplify things, we also considered words whose only difference is the presence of apostrophes to be the same (e.g. “its” and “it’s”).
         - Besides making the data easier to process in subsequent steps, removing punctuation also removes any HTML tags attached to the text which could cause problems later on.
 
