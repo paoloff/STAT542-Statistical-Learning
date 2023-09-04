@@ -9,7 +9,7 @@ Yue Zhang - yuez11;
 
 ## 1. Introduction
 
--  Sentiment analysis is a tool for classifying the subjective impression of a given product or topic.
+-  Sentiment analysis is a tool for classifying the subjective impression of a product or topic.
 -  Using sentiment analysis, an algorithm can read a text written in natural language and map it to a scale ranging from positive to negative feelings.
 -  Because it is able to interpret human language, sentiment analysis is widely used in many online platforms.
 -  For instance, companies use sentiment analysis to gain direct feedback of customers of a product.
