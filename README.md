@@ -83,8 +83,9 @@ The results of the 10 test/train split results are the following:
 |      0.1252      |     0.1243    |    7.751 sec    |   40.535 sec |
 |      0.1206      |     0.1272    |    10.087 sec   |   39.946 sec |
 
+
 The mean errors and execution times are shown below.
 
 | Mean ElasticNet Error | Mean XGBoost Error | Mean ElasticNet Time | Mean XGBoost Time |
-| --------------------- | ------------------ | -------------------- | ----------------- |
+| -------- | ------------ | --------------- | --------- |
 |          0.1215       |        0.1197      |       7.38 sec       |     40.33 sec     |
