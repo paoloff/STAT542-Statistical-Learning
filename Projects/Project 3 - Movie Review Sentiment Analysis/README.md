@@ -39,11 +39,11 @@ The data processing consists of 2 main steps: (1) removing irrelevant symbols an
     - The second main step in processing the review texts is to remove most words and only use a small subset of them. The reason for this is that usually by only knowing a small subset of words in a review is enough to guess the impression of the reviewer, such as “best” and “great” for positive reviews and “worst” or “waste” for negative ones. By removing the unnecessary or less meaningful words, we can simplify the complexity of the problem and prevent overfitting of the model.
     - The vocabulary is found in R. It is worth mentioning here that we utilized the data from all reviews to obtain the vocabulary, not only the train data of a given split. Technically this would be a little of a cheat, but it was allowed by Prof. Liang since we have access to all data anyway.
     - The steps to obtain the vocabulary are:
-          i. Construct a vectorized representation of all texts with sequence of words up to 4. Each term (sequence of 1 to 4 words) is a column in this representation, and each row is a review.
-        ii. Make a Logistic Regression with Lasso with this data.
-        iii. Select the model with largest degree of freedom less than 2000.
-        iv. Make another Logistic Regression with Lasso with a restricted vocabulary obtained from the previous step.
-        v. Select the model with the degree of freedom closest to 1000.
+        - Construct a vectorized representation of all texts with sequence of words up to 4. Each term (sequence of 1 to 4 words) is a column in this representation, and each row is a review.
+        - Make a Logistic Regression with Lasso with this data.
+        - Select the model with largest degree of freedom less than 2000.
+        - Make another Logistic Regression with Lasso with a restricted vocabulary obtained from the previous step.
+        - Select the model with the degree of freedom closest to 1000.
     - In this way, we obtain a vocabulary with 1005 terms in R.
     - Later, in Python, we reduce this to 980 terms by equating different words with the same letters (e.g. “its” and “it’s”). The 980 terms are submitted in a separate text file.
       
