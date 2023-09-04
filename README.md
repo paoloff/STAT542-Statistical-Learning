@@ -1,7 +1,5 @@
-# Welcome to GitHub Desktop!
-
-Project 1: Predicting the Housing Prices in Ames
-STAT 542 - Fall 2022
+# Project 1: Predicting the Housing Prices in Ames
+# STAT 542 Statistical Learning - Fall 2022
 
 Team:
 Paolo Ferrari - paolof2 
@@ -52,7 +50,7 @@ For the regression model, we did several pre-processing steps to boost the perfo
     Using ElasticNet with lambda range np.exp(np.linspace(-1, -21, num=200)) and alpha=0.2, we recorded error below benchmark for every train-test split.\
 
 
-III. Regression Tree Model
+# III. Regression Tree Model
 
     For the Regression Tree Model, we used the XG Boost algorithm. Compared to the Linear Regression, this model required less pre-processing steps and gave very similar error rates.
 
@@ -65,7 +63,7 @@ III. Regression Tree Model
         We utilized XGBoost with 1000 trees, 0.05 learning rate, each round use 50% randomly picked data to train the new tree. We used 100% of features when training a new tree.
 
 
-IV. Results
+# IV. Results
     We performed all tests on free Goggle's Colab.
 
     The results of the 10 test/train split results are the following:
