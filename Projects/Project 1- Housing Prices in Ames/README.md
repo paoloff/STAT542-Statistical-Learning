@@ -7,7 +7,7 @@ Shitao Liu - sl53;
 Yue Zhang - yuez11;
 
 
-## I. Introduction
+## 1. Introduction
 
 - In this project, we predicted the price of houses in Ames from a large dataset categorized by location, size, year built, etc.
 
@@ -18,11 +18,11 @@ Yue Zhang - yuez11;
     - In the final 10x validation test, the root of mean squared error was 12.1 % for LR and 12.0 % for RT.
 
 
-## II. Linear Regression Model
+## 2. Linear Regression Model
 
 - For the regression model, we did several pre-processing steps to boost the performance.
 
-1. Feature Engineering
+- Feature Engineering
 
     - New Features and Removed Features
 
@@ -44,27 +44,27 @@ Yue Zhang - yuez11;
 
         - We did winsorization for these features because they only impact the housing price linearly within a range. For example, when a house becomes surprisingly large, its indoor area no longer contributes to its price linearly. We set 95% as the upper bound, ie, values in both training and testing data larger than the 95 percentile value in the training data were replaced by it.
 
-2. Model Selection
+- Model Selection
 
     - We chose to use ElasticNet model in our implementation. The lambda range was np.exp(np.linspace(-1, -21, num=200)), and the alpha was 0.2. The model implementation was based on glmnet_python package.
 
-3. Performance and Running Time
+- Performance and Running Time
 
     - Using ElasticNet with $\lambda$-range of np.exp(np.linspace(-1, -21, num=200)) and $\alpha=0.2$, we recorded error below benchmark for every train-test split.
 
 
-## III. Regression Tree Model
+## 3. Regression Tree Model
 
 - For the Regression Tree Model, we used the XG Boost algorithm. Compared to the Linear Regression, this model required less pre-processing steps and gave very similar error rates.
 
-1. Data Pre-processing
+- Data Pre-processing
     - We utilized dummy coding and kept all features from train dataset. Keep all levels even if binary, and throw away all unseen features in the test dataset.
 
-2. Model Selection
+- Model Selection
    - We utilized XGBoost with 1000 trees, 0.05 learning rate, each round use 50% randomly picked data to train the new tree. We used 100% of features when training a new tree.
 
 
-## IV. Results
+## 4. Results
 
 - We performed all tests on free Goggle's Colab.
 
