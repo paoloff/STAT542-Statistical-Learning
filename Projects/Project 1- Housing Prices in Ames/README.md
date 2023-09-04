@@ -7,7 +7,7 @@ Shitao Liu - sl53;
 Yue Zhang - yuez11;
 
 
-# I. Introduction
+## I. Introduction
 
 - In this project, we predicted the price of houses in Ames from a large dataset categorized by location, size, year built, etc.
 
@@ -18,7 +18,7 @@ Yue Zhang - yuez11;
     - In the final 10x validation test, the root of mean squared error was 12.1 % for LR and 12.0 % for RT.
 
 
-# II. Linear Regression Model
+## II. Linear Regression Model
 
 - For the regression model, we did several pre-processing steps to boost the performance.
 
@@ -53,7 +53,7 @@ Yue Zhang - yuez11;
     - Using ElasticNet with $\lambda$-range of np.exp(np.linspace(-1, -21, num=200)) and $\alpha=0.2$, we recorded error below benchmark for every train-test split.
 
 
-# III. Regression Tree Model
+## III. Regression Tree Model
 
 - For the Regression Tree Model, we used the XG Boost algorithm. Compared to the Linear Regression, this model required less pre-processing steps and gave very similar error rates.
 
@@ -64,7 +64,7 @@ Yue Zhang - yuez11;
    - We utilized XGBoost with 1000 trees, 0.05 learning rate, each round use 50% randomly picked data to train the new tree. We used 100% of features when training a new tree.
 
 
-# IV. Results
+## IV. Results
 
 - We performed all tests on free Goggle's Colab.
 
