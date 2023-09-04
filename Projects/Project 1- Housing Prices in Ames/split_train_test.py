@@ -1,6 +1,12 @@
 import pandas as pd
 import random
 
+# Randomly split the data in file AMES.csv into two csv files:
+#    - train, containing 75% of the data
+#    - test, containing 25% of the data
+#
+# Both train.csv and test.csv files are saved in the current folder
+
 def split(filename, seed_n = 0):
 
     random.seed(seed_n)
