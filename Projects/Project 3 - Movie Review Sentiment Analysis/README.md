@@ -44,7 +44,7 @@ The data processing consists of 2 main steps: (1) removing irrelevant symbols an
         - Select the model with the largest number of explanatory variables found by Lasso subject to a maximum of 2000.
         - Make another set of Logistic Regressions with Lasso now using the restricted vocabulary obtained from the previous step. Select the model with the number of explanatory variables closest to 1000.
     - In this way, we obtain a vocabulary with 1005 terms in R.
-    - Later, in Python, we reduce this to 980 terms by equating different words with the same letters (e.g. “its” and “it’s”). The 980 terms are submitted in a separate text file.
+    - Later, in Python, we reduce this to 980 terms by equating different words with the same letters (e.g. “its” and “it’s”). The 980 terms are submitted in a the text file "myvocab.txt".
       
 ## 4. Model
 
