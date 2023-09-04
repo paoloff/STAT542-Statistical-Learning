@@ -59,7 +59,7 @@ The data processing consists of 2 main steps: (1) removing irrelevant symbols an
     - There are a total of 5 splits, with random id’s given for the train and test reviews. The performance of the model is evaluated in each of these 5 splits.
       
 ## 5. Model evaluation
-The model is evaluated by the common AUC of the test data. Below we provide the values for each split:
+The model is evaluated by the common area-under-the-curve (AUC) of the test data. Below we provide the values for each split:
 
 | Split number| AUC|
 | --| --|
