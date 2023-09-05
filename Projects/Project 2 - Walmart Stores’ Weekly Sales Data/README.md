@@ -48,7 +48,7 @@ are only from the training set: we performed SVD on over 4,000 data matrices
 
 ## 3. Data encoding
 
-For the raw data, we have the sales data as a function of store, department, and date. The
+  - For the raw data, we have the sales data as a function of store, department, and date. The
 ‘IsHoliday’ variable is ignored. For date, we first transform it into two variables: ‘Year’ and
 ‘Week’, where ‘Year’ may be 2010, 2011, 2012, and ‘Week’ may vary from 1 to 52. Due the
 algorithm in python, we found out that all holidays are assigned to one specific week, for
@@ -58,7 +58,8 @@ two encoding schemes:
 dummy variables. One obvious drawback is 4410 variables may be too many and will
 significantly influence the performance negatively.
   - Or, we can run a regression tree model on each specific ‘Store’ and ‘Department’.
-Model fitting
+
+## 4. Model fitting
 
 For fitting the models, we use gradient boosted regression trees. Compared with regular linear
 regression, gradient boosted trees have more hyper parameters, while being essentially a
@@ -69,33 +70,26 @@ unsurprisingly slow, and it gives a mediocre WAE performance of 1900. We then tr
 gradient boosted regression tree on each store and each department. This doesn’t reduce the
 training time significantly, and actually due to the parallel nature of the former method, the latter
 strategy cannot be accelerated even using a powerful GPU. For parameters, we use 50 tress for
-fitting, with a learning rate of 0.3.We set the max depth to be 6 levels, and for each tree, we
+fitting, with a learning rate of 0.3. We set the max depth to be 6 levels, and for each tree, we
 sample 70% of all data to avoid over fitting.
 
-## 4. Results
+## 5. Results
 
 We use the Google Colab standard machine (not paid version), the model takes 19 minutes to
 train.
-Performance
-Here I list the performance for 10 test data sets. The average is 1566.
-Test set Performance
-1
-1731.445
-2
-1434.749
-3
-1348.845
-4
-1391.556
-5
-2637.722
-6
-1653.632
-7
-1639.885
-8
-1344.911
-9
-1253.056
-10
-1228.402
+
+- Performance
+    - Here I list the performance for 10 test data sets. The average is 1566.
+  
+|Test set | Performance|
+|--|--|
+|1|1731.445|
+|2|1434.749|
+|3|1348.845|
+|4|1391.556|
+|5|2637.722|
+|6|1653.632|
+|7|1639.885|
+|8|1344.911|
+|9|1253.056|
+|10|1228.402|
