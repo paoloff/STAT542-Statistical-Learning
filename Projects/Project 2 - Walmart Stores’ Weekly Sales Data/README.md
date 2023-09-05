@@ -78,8 +78,7 @@ sample 70% of all data to avoid over fitting.
 We use the Google Colab standard machine (not paid version), the model takes 19 minutes to
 train.
 
-- Performance
-    - Here I list the performance for 10 test data sets. The average is 1566.
+- Performance: Here we list the performance for 10 test data sets. The average is 1566.
   
 |Test set | Performance|
 |--|--|
