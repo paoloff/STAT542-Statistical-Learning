@@ -1,0 +1,13 @@
+name: MovieRec
+title: MovieRec
+username:
+account: paoloff
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9772647
+bundleId: 7677246
+url: https://paoloff.shinyapps.io/movierec/
+when: 1694568871.65057
+lastSyncTime: 1694568871.65057
+asMultiple: FALSE
+asStatic: FALSE
