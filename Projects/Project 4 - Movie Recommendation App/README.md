@@ -1,2 +1,2 @@
-### Movie Recommndation app: 
+### Movie Recommendation app: 
 https://paoloff.shinyapps.io/movierec/
